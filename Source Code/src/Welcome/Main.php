@@ -20,7 +20,8 @@ class Main extends PluginBase implements Listener{
 
     public function JoinEvent(PlayerJoinEvent $event) {
     $player = $event->getPlayer();
-    $event->getPlayer()->sendMessage($event->getPlayer()->getName() . "§dWelcome the Server! ");
+    $event->getPlayer()->sendMessage ("[" . $player->getName() . "]§dWelcome the Server! ");
+    $event->setJoinMessage (TextFormat::RED . " [" . $player->getName() . "] §dWelcome the Server! ");
     }
 }
 
