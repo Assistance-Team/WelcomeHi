@@ -5,6 +5,7 @@ namespace WelcomeHi;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
+use pocketmine\event\player\PlayerJoinEvent;
 
 class Main extends PluginBase implements Listener{
 	public function onLoad() {
@@ -17,7 +18,10 @@ class Main extends PluginBase implements Listener{
 		$this->getServer()->getPluginManager()->registerEvents($this,$this);
 	}
 
-    public function 
-    $event->getPlayer()->sendMessage($event->getPlayer()->getName() . " 안녕 ");
+    public function JoinEvent(PlayerJoinEvent $event) {
+    $player = $event->getPlayer();
+    $event->getPlayer()->sendMessage($event->getPlayer()->getName() . "§dWelcome the Server! ");
+    }
+}
 
 ?>
