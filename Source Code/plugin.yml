@@ -1,0 +1,7 @@
+name: WelcomeHi
+main: Welcome\Main
+version: "1.0-release"
+author: ZINGDING
+api: 
+- 2.0.0
+- 1.12.1
