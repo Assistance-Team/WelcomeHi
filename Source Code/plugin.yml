@@ -1,5 +1,5 @@
 name: WelcomeHi
-main: Welcome\Main
+main: WelcomeHi\Main
 version: "1.0-release"
 author: ZINGDING
 api: 
