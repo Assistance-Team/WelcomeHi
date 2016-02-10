@@ -13,7 +13,7 @@ class Main extends PluginBase implements Listener{
  		$this->getLogger()->info("§cMade By ZINGDING."); 
  	} 
  	public function onEnable() { 
- 		$this->getLogger()->info("§dGivecookie plugin enabled."); 
+ 		$this->getLogger()->info("§dWelcomeHi plugin enabled."); 
  		$this->getLogger()->info("§cThis plugin's License is the ZINGDING-EULA."); 
  		$this->getServer()->getPluginManager()->registerEvents($this,$this); 
  	} 
